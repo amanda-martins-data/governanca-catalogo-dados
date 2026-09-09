@@ -1,0 +1,12 @@
+name: data_quality_report
+layer: Report
+project: "06 - Data Observability & Quality"
+owner: "Amanda Martins"
+description: "Relatorio JSON de checagens de qualidade (Great Expectations + frescor/completude) sobre a camada Gold"
+upstream: [air_quality_daily_gold]
+sensitivity: internal
+retention_days: 90
+pii_fields: []
+last_reviewed: "2026-09"
+format: json
+location: "out/report.json"
