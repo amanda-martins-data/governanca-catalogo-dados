@@ -1,0 +1,12 @@
+name: air_quality_daily_gold
+layer: Gold
+project: "03 - Medallion Architecture"
+owner: "Amanda Martins"
+description: "Agregacao diaria por cidade e poluente, com classificacao de AQI, materializada via dbt external table"
+upstream: [air_quality_silver]
+sensitivity: public
+retention_days: 365
+pii_fields: []
+last_reviewed: "2026-09"
+format: parquet
+location: "data/gold/air_quality_daily_gold/"
