@@ -1,0 +1,12 @@
+name: rds_air_quality_daily
+layer: Gold
+project: "04 - IaC Pipeline (Terraform/AWS)"
+owner: "Amanda Martins"
+description: "Tabela relacional de qualidade do ar diaria, upsert idempotente por (measured_date, city, parameter), para consumo via BI/ODBC"
+upstream: [s3_air_quality_silver]
+sensitivity: public
+retention_days: 365
+pii_fields: []
+last_reviewed: "2026-09"
+format: postgres_table
+location: "RDS Postgres - air_quality_daily"
