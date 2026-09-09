@@ -1,0 +1,12 @@
+name: s3_air_quality_silver
+layer: Silver
+project: "04 - IaC Pipeline (Terraform/AWS)"
+owner: "Amanda Martins"
+description: "Dados transformados e agregados pela Lambda, gravados em S3 antes do upsert idempotente no RDS"
+upstream: [s3_air_quality_bronze]
+sensitivity: public
+retention_days: 365
+pii_fields: []
+last_reviewed: "2026-09"
+format: json
+location: "s3://<bucket>/silver/"
