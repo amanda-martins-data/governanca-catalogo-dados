@@ -1,0 +1,12 @@
+name: ai_quality_narrative
+layer: Report
+project: "05 - AI-Integrated Data Pipeline"
+owner: "Amanda Martins"
+description: "Explicacao em linguagem natural de anomalias estatisticas na camada Gold, gerada pelo agente de qualidade via API Claude"
+upstream: [air_quality_daily_gold]
+sensitivity: internal
+retention_days: 30
+pii_fields: []
+last_reviewed: "2026-09"
+format: text
+location: "stdout / caller-defined"
