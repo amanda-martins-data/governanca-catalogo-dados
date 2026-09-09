@@ -1,0 +1,31 @@
+# Contrato que cada arquivo em catalog/datasets/*.yaml deve seguir.
+# Isto nao e um JSON Schema formal - e um contrato simples, verificado
+# em codigo por src/catalog_builder.py (funcao validate_dataset).
+
+required_fields:
+  - name           # identificador unico, snake_case
+  - layer          # Bronze | Silver | Gold | Report
+  - project        # projeto de origem no portfolio (ex.: "03 - Medallion Architecture")
+  - owner          # pessoa responsavel pelo dataset
+  - description    # frase curta do que o dataset representa
+  - upstream       # lista de nomes de datasets upstream (lista vazia = fonte primaria)
+  - sensitivity    # public | internal | confidential | personal
+  - retention_days # inteiro, dias de retencao definidos para esta camada
+  - pii_fields     # lista de campos que seriam dado pessoal (LGPD) - vazia se nenhum
+  - last_reviewed  # "AAAA-MM"
+
+optional_fields:
+  - format         # ex.: parquet, json, postgres_table
+  - location       # caminho ou tabela, informativo
+
+valid_layers:
+  - Bronze
+  - Silver
+  - Gold
+  - Report
+
+valid_sensitivity:
+  - public
+  - internal
+  - confidential
+  - personal
