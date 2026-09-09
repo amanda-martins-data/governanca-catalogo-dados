@@ -1,0 +1,12 @@
+name: air_quality_bronze
+layer: Bronze
+project: "03 - Medallion Architecture"
+owner: "Amanda Martins"
+description: "Dados brutos de qualidade do ar ingeridos da OpenAQ, particionados por ingestion_date, imutaveis"
+upstream: []
+sensitivity: public
+retention_days: 1825
+pii_fields: []
+last_reviewed: "2026-09"
+format: parquet
+location: "data/bronze/"
