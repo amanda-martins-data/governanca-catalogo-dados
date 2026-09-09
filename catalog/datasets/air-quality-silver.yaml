@@ -1,0 +1,12 @@
+name: air_quality_silver
+layer: Silver
+project: "03 - Medallion Architecture"
+owner: "Amanda Martins"
+description: "Dados de qualidade do ar validados e deduplicados, particionados por measured_date, idempotente por particao"
+upstream: [air_quality_bronze]
+sensitivity: public
+retention_days: 730
+pii_fields: []
+last_reviewed: "2026-09"
+format: parquet
+location: "data/silver/"
