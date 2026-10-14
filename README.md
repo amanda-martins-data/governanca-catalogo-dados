@@ -1,5 +1,7 @@
 # Governanca e Catalogo de Dados
 
+[![CI](https://github.com/amanda-martins-data/governanca-catalogo-dados/actions/workflows/ci.yml/badge.svg)](https://github.com/amanda-martins-data/governanca-catalogo-dados/actions/workflows/ci.yml)
+
 Framework de governanca (papeis, matriz RACI, politica de retencao,
 classificacao de dados com mapeamento a LGPD) combinado com um
 catalogo de dados funcional: um script Python que le definicoes YAML
