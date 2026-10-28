@@ -8,9 +8,8 @@ catalogo de dados funcional: um script Python que le definicoes YAML
 de cada dataset do portfolio e gera uma pagina HTML navegavel com
 linhagem, dono e sensibilidade de cada um.
 
-Projeto 08 de uma serie documentando minha transicao de Analista de
-Dados para Arquitetura de Dados - veja o [perfil
-completo](https://github.com/amanda-martins-data).
+Projeto 08 do meu portfolio de Engenharia e Arquitetura de Dados - veja o
+[perfil completo](https://github.com/amanda-martins-data).
 
 ## Por que este projeto
 
@@ -21,12 +20,9 @@ dataset e um arquivo YAML validado contra um contrato
 em busca de referencias quebradas ou datasets derivados sem origem
 declarada.
 
-Diferencial pessoal: ja geri governanca regulatoria real - relatorios
-GRI, indicadores ESG para o ISE B3, disclosures alinhados ao DJSI.
-O framework de governanca de dados deste projeto (papeis, RACI,
-retencao, classificacao) aplica a mesma disciplina de auditoria e
-consequencia real que uso profissionalmente para compliance
-ambiental - inclusive o mapeamento explicito a LGPD.
+Criterio de desenho: cada regra de governanca tem dono, evidencia
+e consequencia definidos, como em um processo auditavel - inclusive
+o mapeamento explicito a LGPD.
 
 ## Arquitetura
 
